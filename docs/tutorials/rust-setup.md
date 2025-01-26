@@ -24,7 +24,9 @@ cd rust-dev-container
 git init
 ```
 
-**Add a Dev Container configuration file called .devcontainer.json that contains the following content:**
+**Add a Dev Container**
+
+* Add a directory called .devcontainer and add a configuration file within this directory called .devcontainer.json that contains the following content:
 
 ```
 {
@@ -43,10 +45,11 @@ git init
 
 * "name" sets the name of the Dev Container.
 
-* "image" defines the Docker image to be used (Rust).
+* "image" defines the Docker image to be used for the Rust environment.
 
-* "customizations" installs extensions for VS Code.
+* "customizations" installs the Rust Analyzer extension for VS Code.
 
+> **Make sure Docker is running before proceeding**
 
 **Start your environment**
 
@@ -69,10 +72,12 @@ git init
 ```
 rustc --version
 ```
-* This will output the current version of Rust installed.
+> This will output the current version of Rust installed.
 
 
-**Create a new Rust project using Cargo. Cargo is the official Rust package manager and build tool.**
+**Create a new Rust project using Cargo.**
+
+> **Cargo is the official Rust package manager and build tool.**
 
 * Run the following command to create a new binary project:
 
@@ -102,7 +107,10 @@ Option 1: Use cargo build to Compile the Project
 ```
 cargo build
 ```
-* This will generate an executable in the target folder. Then you can run it by using:
+> This will generate an executable in the target folder. 
+
+* Then you can run it by using:
+
 ```
 ./target/debug/hellocomp423
 ```
@@ -117,7 +125,7 @@ Option 2: Use cargo run to both compile and run your project
 ```
 cargo run
 ```
-* This will compile the project and then immediately run the executable.
+> This will compile the project and then immediately run the executable.
 
 * The output should be
 ```
