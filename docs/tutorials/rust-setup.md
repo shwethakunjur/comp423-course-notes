@@ -27,8 +27,7 @@ git init
 **Add a Dev Container**
 
 * Add a directory called .devcontainer and add a configuration file within this directory called devcontainer.json that contains the following content:
-
-```
+```{.yaml .copy}
 {
     "name": "Rust Development Environment",
     "image": "mcr.microsoft.com/devcontainers/rust:latest",
@@ -49,7 +48,8 @@ git init
 
 * "customizations" installs the Rust Analyzer extension for VS Code.
 
-> **Make sure Docker is running before proceeding**
+!!! Note
+    Make sure Docker is running before proceeding
 
 **Start your environment**
 
@@ -62,8 +62,7 @@ git init
 
 * Open the terminal.
 * Run:
-
-```
+```{.yaml .copy}
 rustc --version
 ```
 > This will output the current version of Rust installed.
@@ -71,11 +70,11 @@ rustc --version
 
 **Create a new Rust project using Cargo**
 
-> **Cargo is the official Rust package manager and build tool.**
+!!! Note
+    Cargo is the official Rust package manager and build tool.
 
 * Run the following command to create a new binary project:
-
-```
+```{.yaml .copy}
 cargo new hellocomp423 --vcs none
 ```
 
@@ -86,7 +85,7 @@ cargo new hellocomp423 --vcs none
 
 **Add the following code for your Hello COMP423 program:**
 
-```
+```{.yaml .copy}
 fn main ()
 {
     println!("Hello COMP423");
@@ -98,16 +97,16 @@ fn main ()
 Option 1: Use cargo build to Compile the Project
 
 * Run the following command to compile your project:
-```
+```{.yaml .copy}
 cargo build
 ```
 > This will generate an executable in the target folder. 
 
 * Then you can run it by using:
-
-```
+```{.yaml .copy}
 ./target/debug/hellocomp423
 ```
+
 * The output should be:
 ```
 Hello COMP423
@@ -116,7 +115,7 @@ Hello COMP423
 Option 2: Use cargo run to both compile and run your project
 
 * Run the following command to compile and run your project in one step:
-```
+```{.yaml .copy}
 cargo run
 ```
 > This will compile the project and then immediately run the executable.
