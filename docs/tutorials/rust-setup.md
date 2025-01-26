@@ -26,12 +26,12 @@ git init
 
 **Add a Dev Container**
 
-* Add a directory called .devcontainer and add a configuration file within this directory called .devcontainer.json that contains the following content:
+* Add a directory called .devcontainer and add a configuration file within this directory called devcontainer.json that contains the following content:
 
 ```
 {
-    "name": "Rust Development Environment"
-    "image": "mcr.microsoft.com/devcontainers/rust:latest"
+    "name": "Rust Development Environment",
+    "image": "mcr.microsoft.com/devcontainers/rust:latest",
     "customizations": {
         "vscode": {
             "extensions": [
@@ -52,12 +52,6 @@ git init
 > **Make sure Docker is running before proceeding**
 
 **Start your environment**
-
-* Install VS Code.
-
-* Open your directory where you configured your Dev Container in VS Code.
-
-* Install the Dev Containers VS Code extension.
 
 * Open the command palette in VS Code. In the menu bar, select View > Command Palette.
 
