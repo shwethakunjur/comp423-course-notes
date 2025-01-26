@@ -53,9 +53,9 @@ git init
 
 **Start your environment**
 
-* Install VS Code
+* Install VS Code.
 
-* Open your directory where you configured your Dev Container in VS Code
+* Open your directory where you configured your Dev Container in VS Code.
 
 * Install the Dev Containers VS Code extension.
 
@@ -64,7 +64,7 @@ git init
 * Enter the following command >Dev Containers: Open Dev Container. This will start building your dev container.
 
 
-**Once your Dev Container starts, check that rustc is installed.**
+**Once your Dev Container starts, check that rustc is installed**
 
 * Open the terminal.
 * Run:
@@ -75,7 +75,7 @@ rustc --version
 > This will output the current version of Rust installed.
 
 
-**Create a new Rust project using Cargo.**
+**Create a new Rust project using Cargo**
 
 > **Cargo is the official Rust package manager and build tool.**
 
@@ -114,7 +114,7 @@ cargo build
 ```
 ./target/debug/hellocomp423
 ```
-* The output should be
+* The output should be:
 ```
 Hello COMP423
 ```
@@ -127,7 +127,7 @@ cargo run
 ```
 > This will compile the project and then immediately run the executable.
 
-* The output should be
+* The output should be:
 ```
 Hello COMP423
 ```
